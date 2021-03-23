@@ -1,0 +1,72 @@
+body {
+  font-family: "Indie Flower", strong cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color: darkolivegreen;
+}
+input {
+  /*A INPUTS HAY QUE DARLE ESTILO DE FUENTE POR SEPARADO*/
+  font-family: "Indie Flower", strong cursive;
+  font-weight: bold;
+  font-size: 1em;
+}
+.postcard {
+  width: 500px;
+  height: 325px;
+  background-color: rgba(255, 255, 255, 1);
+  margin: auto; /*centrado en la pagina, mismo margen de todos los lados*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px; /*empuja hacia afuera 20px*/
+}
+.encabezado {
+  overflow: hidden;
+}
+.cuerpo {
+  overflow: hidden;
+}
+.final {
+  overflow: hidden;
+  padding: 15px; /**/
+  text-align: center; /*centra el contenido de este div (el boton de submit)*/
+}
+.texto {
+  float: left;
+  width: 50%; /*solo ocupa un 50% del ancho del contenedor*/
+  margin: 0;
+}
+.entradas {
+  float: right;
+  width: 50%;
+}
+.postcard img {
+  width: 70px; /* max-width: ajusta imagen de forma proporcional! tambien la altura*/
+  height: 70px;
+  float: right; /*se ubica a la derecha del contenedor*/
+  /*CUIDADO CON FLOAT PORQUE HACE QUE LAS COSAS FLOTEN Y SALEN DE LOS DIVS */
+  /*SOLUCIONAR CON OVERFLOW*/
+}
+.postcard h1 {
+  margin: 0;
+}
+.texto p {
+  margin: 0;
+}
+.entradas input {
+  border: none;
+  border-bottom: 1px solid black;
+  color: darkgrey;
+  width: 95%;
+  display: block; /*hace que los imput sean un bloque, y no un elemento que se queda pegado, pero yo he utilizado <br> salto de linea*/
+  margin-bottom: 3px;
+}
+.final input {
+  background: darkgrey;
+  border: none;
+}
+.final input:hover {
+  background: darkgrey;
+  border: 1px solid black;
+}
